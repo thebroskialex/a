@@ -1,0 +1,8 @@
+# netlify.toml
+[[headers]]
+  # This path must EXACTLY match the filename as it appears in your Netlify site's URL.
+  # Case-sensitive! Use cookierun%20bold.otf if that's what's in the URL and filename.
+  for = "/cookierun%20bold.otf"
+  [headers.values]
+    Access-Control-Allow-Origin = "*" # This is the crucial header
+    Content-Type = "font/otf"        # Helps ensure browser interprets it correctly
